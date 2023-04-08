@@ -26,11 +26,15 @@ const CourseInput = (props) => {
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
+      <div
+        className={`${styles["form-control"]} ${!isValid && styles.invalid}`}
+      >
         <label>To do</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
-
+      <div className={styles.error}>
+        {!isValid ? "*To do item's name cannot be empty" : ""}
+      </div>
       <Button type="submit">Add To Do</Button>
     </form>
   );
