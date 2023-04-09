@@ -1,3 +1,5 @@
 ## Todo-list
 
-An app to add your to do.
+An app to add to do items.
+
+https://wongluyee.github.io/todo-list/
